@@ -1,0 +1,213 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.main-section {
+  background-size: cover;
+  height: 650px;
+  margin-bottom: 100px;
+}
+
+.main-content {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.main-content h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: white;
+  text-shadow: 1px 4px 15px rgba(0, 0, 0, 0.4);
+  letter-spacing: 1px;
+  padding-top: 30%;
+}
+
+.main-content p {
+  color: white;
+  text-align: center;
+  margin-top: 30px;
+  letter-spacing: 2px;
+}
+
+.buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.buttons button {
+  padding: 10px;
+  background-color: #f1c50e;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  width: 15%;
+  font-weight: bold;
+  margin: 10px 0px 0px 0px;
+  font-size: 10px;
+  margin: 20px 10px 10px 10px;
+}
+
+.buttons button:hover {
+  background-color: aliceblue;
+  border-bottom: 3px solid #f1c50e;
+}
+
+
+.flexible-learning-section{
+  width: 100%;
+  height: 70vh;
+}
+
+.upper-section-fl{
+  background-color: white;
+  width: 62%;
+  height: 150px;
+  margin: 0 auto;
+}
+
+.fl-sub-head{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.description{
+  margin-top: 12px;
+  font-size: 14px;
+  color: #847790;
+  line-height: 25px;
+}
+
+.fl-cards-container{
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  position: relative;
+  bottom: 25px;
+}
+
+.cards-fl{
+  width: 28%;
+  border-radius: 12px;
+  background-color: #F2F2F2;
+  padding: 15px;
+  margin: 10px;
+  z-index: 2;
+}
+
+.no{
+  font-size: 1.5rem;
+}
+
+.card-des{
+  font-size: 12px;
+  margin-top: 20px;
+  line-height: 18px;
+}
+
+.yellow-bg-fl{
+  background-color: #f1c50e;
+  width: 100%;
+  height: 50vh;
+  position: relative;
+  bottom: 120px;
+}
+
+.blue-bg-fl{
+  background-color: #0d244b;
+  height: 30vh;
+  position: relative;
+  bottom: 120px;
+}
+
+.help-container{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fff;
+  width: 55%;
+  border-radius: 20px;
+  padding: 40px;
+  position: absolute;
+  top: 55%;
+  left: 22%;
+  z-index: 2; 
+}
+
+.left-hc{
+  width: 40%;
+}
+
+.hc-title{
+  font-size: 1.8rem;
+}
+
+.hc-dec{
+  color: #847790;
+  font-size: 14px;
+  line-height: 25px;
+  margin-top: 20px;
+}
+
+.left-hc i{
+  margin-top: 20px;
+  padding: 5px;
+}
+
+.right-hc{
+  width: 55%;
+  margin-left: 5%;
+  padding: 10px;
+}
+
+
+.right-hc input[type="text"]{
+  width: 100%;
+  border: none;
+  padding: 10px;
+  background-color: #F2F2F2;
+  border-radius: 10px;
+  margin-top: 35px;
+}
+
+.right-hc input[type="tel"]{
+  width: 49%;
+  border: none;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #F2F2F2;
+  border-radius: 10px;
+}
+
+.right-hc input[type="email"]{
+  width:49%;
+  border: none;
+  padding: 10px;
+  background-color: #F2F2F2;
+  border-radius: 10px;
+}
+
+.right-hc input[type="submit"]{
+  width:100%;
+  border: none;
+  font-weight: bold;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f1c50e;
+  border-radius: 10px;
+}
+
