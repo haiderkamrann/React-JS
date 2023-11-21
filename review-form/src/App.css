@@ -1,0 +1,25 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.form{
+  margin: 2% auto;
+  width: 50%;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid black;
+  box-shadow: 1px 1px 2px;
+}
+
+.form label, input{
+  margin: 10px;
+  padding: 2px;
+  
+}
+
+.form textarea{
+  width: 50%;
+  height: 10vh;
+}
