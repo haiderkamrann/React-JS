@@ -2,6 +2,9 @@ import { useState, useEffect } from 'react';
 
 function App() {
   const [posts, setPosts] = useState(null);
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [submittedData, setSubmittedData] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -19,18 +22,60 @@ function App() {
       }
     };
 
-  
     fetchData();
   }, []); 
 
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+
+    // Add the submitted data to the state
+    setSubmittedData([...submittedData, { name, email }]);
+
+    // Clear the input fields
+    setName('');
+    setEmail('');
+  };
+
   return (
     <div>
+      <form onSubmit={handleFormSubmit}>
+        <label>
+          Name:
+          <input type="text" value={name} onChange={(e) => setName(e.target.value)} />
+        </label>
+        <br />
+        <label>
+          Email:
+          <input type="text" value={email} onChange={(e) => setEmail(e.target.value)} />
+        </label>
+        <br />
+        <button type="submit">Submit</button>
+      </form>
+
+      
+      {submittedData.length > 0 && (
+        <div>
+          <h2>Submitted Data:</h2>
+          <ul>
+            {submittedData.map((data, index) => (
+              <li key={index}>
+                <p>Name: {data.name}</p>
+                <p>Email: {data.email}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+
       {posts ? (
-        <ul>
-          {posts.map(post => (
-            <li key={post.id}>{post.title}</li>
-          ))}
-        </ul>
+        <div>
+          <h2>List of Posts:</h2>
+          <ul>
+            {posts.map(post => (
+              <li key={post.id}>{post.title}</li>
+            ))}
+          </ul>
+        </div>
       ) : (
         <p>Loading...</p>
       )}
