@@ -12,7 +12,7 @@ function App() {
       const randomCode = Math.floor(Math.random() * 100000);
       setInputValue(`${randomCode}`);
       setIsLoading(false);
-    }, 2000);
+    }, 1000);
   };
 
   return (
